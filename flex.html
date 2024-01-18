@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- <link rel="stylesheet" href="flex.css"/> -->
+
+<style>
+    section{
+     height:300px;
+     position: relative;
+     width: 300px;
+     transition: 3s;
+     display: flex;
+     justify-content: center;
+     border:2px solid black;    
+     transform-style:preserve-3d ;
+
+    }
+body{
+    perspective: 1000px;
+}
+    div{
+        height:300px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* animation:change 2s infinite linear; */
+    }
+    @keyframes change {
+        0%{
+            border: 2px solid red ;
+        }
+        25%{
+            border: 13px solid blue ;
+        }
+        50%{
+            border:4px solid yellow;
+        }
+    }
+    #k{
+        background-color: green;
+        position: absolute;
+        /* z-index: 1; */
+        backface-visibility:hidden;
+    }
+    #l{
+        background-color: yellow;
+        transform: rotateY(180deg);
+        backface-visibility:hidden;
+    }
+    section:hover {
+        transform: rotateY(180deg);
+       
+        animation:change 10s infinite linear;
+    }
+
+</style>
+</head>
+<body>
+    <!-- display : flex;
+    justify-content :center,end,space around ,space between;
+    flex-direction :row-reverse,coloumn,coloumn-reverse -->
+    <!-- FLEx-wrap:no wrap,wrap
+       flex-grow:1;
+    flex-basis:-->
+    <section>
+    <div id="k">Hello!! i am adarsh suman</div>
+    <div id="l"> Hello!! i am manish suman
+    </div>
+    <!-- <div id="m"></div></section> -->
+    </section>
+</body>
+</html>

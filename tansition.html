@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+height: 100vhw-;
+
+border: 2px solid red;
+
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            transition: 3s;
+            border-radius: 10%;
+            margin: 10px;
+
+
+        }
+        section:hover div{
+            border-radius: 50%;
+            margin-left:90%;
+}
+        div:nth-child(1){
+           background-color: aqua;
+            transition-timing-function: ease;
+        }
+        div:nth-child(2){
+            background-color: blueviolet;
+            transition-timing-function: ease-in;
+        }
+        div:nth-child(3){
+            background: blue;
+            transition-timing-function: ease-in-out;
+        }
+        div:nth-child(4){
+          background-color: red;
+            transition-timing-function: linear;
+            
+        }
+         div:nth-child(5){
+          background-color: rgb(242, 255, 0);
+            transition-timing-function: steps(10);
+            
+        }
+    </style>
+</head>
+
+<body>
+    
+    <section id="outer">
+        <div id="L"></div>
+        <div id="E"></div>
+        <div id="F"></div>
+        <div id="T"></div>
+        <div id="T"></div>
+    </section>
+</body>
+</html>

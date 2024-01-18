@@ -1,0 +1,197 @@
+/* div:first-child{
+    color:red;
+}
+div:nth-child(2){
+    color:green;
+}
+div:nth-of-type(even){
+    border:2px solid red;
+}
+div{
+    width:200px;
+    height: 20px;
+} 
+/* #sqr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    height: 100px;
+    width: 100px;
+    background-color:blue;
+}
+#sqr:hover{
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 3px orange,1px -2px 25px 10px yellow,-5px -2px 50px 10px rgba(255, 0, 0, 0.756),-5px 12px 45px 10px yellow;
+
+    color:rgb(17, 178, 74);
+    transition:2s;
+} */
+/* #parent{
+    width:200px;
+    height: 200px;
+    background-color: red;
+} */
+
+
+ /* relative unit 
+#child{
+    width:50%;
+    height: 50%;
+    background-color: rgb(95, 163, 13);
+} */
+/* 
+
+
+#parent{
+
+    width:100vw;
+    height: 100vw;
+    background-color: red;
+} */
+/* em hamesha apne parent ka double hota hai
+ul ki nested el banyege to parent ka double size child me dikhega  */
+/* rem ke case me uska parent body hogi jiska bydefault size 16px hota hai */
+
+/* li{
+    font-size: 2em;
+    text-shadow: 0 0 15px red;
+    /* color:transparent; */
+/* }  */
+
+/* box modek ki file ka code h yha se */
+/* div{
+    border: 6px solid hwb(56 7% 9%);
+    padding: 20px;
+    margin:23px;
+
+}
+span{
+    border: 6px solid hwb(56 7% 9%);
+    padding: 20px;
+    /* display: inline-block; */
+    /* visibility: hidden;  show nhi hoga  but present hoga */
+    /* display: none; isme yh page se hi delete hojayega mtlb show hi nhi hoga */
+    /* margin:23px; */
+    /* height: 23px; */
+
+/* 
+} */ 
+
+
+div{
+    width:200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    /* display: inline-block; */
+
+} 
+
+#k{
+    top:0.5px; 
+    /* position: static; me kabhi top ,left,right ,bottom wali value kaam nahi kregi */
+    background-color: red; 
+      position: absolute;
+      /* absolute  ke case me yh ek virtual screen pr ajayega or bagal me jo bhi hoga bo uske niche ajayega
+      ek tarike se overlap hojata jai */
+}
+
+#l{
+    background-color: rgb(40, 204, 57);
+    top:100px; 
+  position: absolute; 
+}
+#n{
+    background-color: rgb(177, 249, 8);
+    position: absolute;
+    top:50px; 
+  
+}
+#o{
+    background-color: #cc28c1;
+    top:350px; 
+  position: relative;
+}
+#m{
+    background-color: rgb(76, 6, 206);
+    position: absolute;
+    top:300px; 
+  
+}
+#v{
+    background-color: rgb(10, 238, 185);
+    position: absolute;
+    top:420px; 
+  
+}
+#circle{
+    height: 50px;
+    width:55px;
+    background-color: rgb(248, 247, 247);
+    position: absolute;
+    border-radius: 50%;
+    top:50px;
+    left:30px;
+
+}
+
+#circle1{
+    height: 50px;
+    width:55px;
+    background-color: rgb(226, 224, 224);
+    position: absolute;
+    border-radius: 50%;
+    top:50px;
+    left:120px;
+    
+}
+
+#circle2{
+    height: 50px;
+    width:100px;
+    background-color: rgba(255, 0, 0, 0.409);
+    position: absolute;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 90%;
+    border-top-right-radius: 90%;
+    border-bottom-right-radius: 50%;
+    top:150px;
+    border:2px double black;
+    left:60px;
+    
+}
+
+#eye1{
+    height:30px;
+    width:30px;
+    background-color: rgb(25, 24, 24);
+    position: absolute;
+    border-radius: 50%;
+    top:70px;
+    left:45px;
+    
+}
+#e1{
+    color:white;
+    background-color: white;
+    height: 10px;
+    width:10px;
+    position: absolute;
+    border-radius: 50%;
+    top: 88px;
+    left: 56px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px white;
+}
+#eye2{
+    height:30px;
+    width:30px;
+    background-color: rgb(25, 24, 24);
+    position: absolute;
+    border-radius: 50%;
+    top:70px;
+    left:135px;
+    
+}

@@ -1,0 +1,27 @@
+#l{
+    height: 100px;
+    flex-shrink:2;
+    width: 100px;
+    /* flex-flow: column-reverse; */
+
+    background-color: rgb(181, 86, 86);
+}
+#m{
+    height: 100px;
+    flex-basis: 300px;
+    width: 100px;
+
+    background-color: rgb(211, 43, 43);
+}#p{
+    height: 100px;
+   flex-grow: 5;
+    width: 100px;
+   flex-shrink: 8;
+    background-color: black;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}

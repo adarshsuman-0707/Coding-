@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            height:300px;
+            border: 2px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform-style:preserve-3d ;
+            transition: 3s;
+        }
+        body{
+            perspective: 900px;
+        }
+        div{
+            height:100px;
+            width:100px;
+            transition: 2s;
+        }
+        div:nth-child(1){
+            background-color: red;
+            position: absolute;
+        
+            backface-visibility: hidden;
+        }
+        div:nth-child(2){
+            background-color: rgb(0, 200, 255);
+            position: absolute;
+            backface-visibility: hidden;
+            transform: rotateY(180deg);
+        }
+        section:hover {
+            transform: rotateY(180deg);
+            border: 2px solid skyblue;
+      
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="a">
+diva
+        </div>
+        <div id ="b"> divB</div>
+    </section>
+</body>
+</html>

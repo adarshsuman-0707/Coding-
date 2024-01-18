@@ -1,0 +1,27 @@
+
+
+section{
+    width:100vh;
+    height: 100vh;
+
+    display: flex;
+   justify-content: center;
+   align-items: start;
+}
+
+#k{
+    height:50px;
+    width:50px;
+    background-color: red;
+}
+#l{
+    height: 50px;
+    width:50px;
+    background-color: rgb(58, 3, 21);
+}
+#m{
+    height: 50px;
+    width:50px;
+    background-color: rgb(73, 18, 255);
+}
+
