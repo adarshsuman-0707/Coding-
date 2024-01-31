@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a:hover {
+
+    text-shadow: 0 0 10px white;
+    color: red;
+}
+
+#innerdiv {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    text-shadow: 2px 3px 10px blue, 0 0 10px red;
+    width: 60%;
+
+}
+
+
+#outerdiv {
+    border-radius: 10px;
+    margin: 0;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px yellow, 1px -2px 5px red;
+    background-color: rgba(0, 0, 0, 0.89);
+    display: flex;
+    color: rgb(241, 137, 25);
+    justify-content: space-between;
+    transition: 2s;
+    animation-name: glow;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 9px yellow, 1px -2px 2px red;
+    }
+
+    25% {
+        box-shadow: 0 0 9px rgb(52, 8, 163), 1px -2px 2px rgb(174, 14, 14);
+    }
+
+    75% {
+        box-shadow: 0 0 9px rgb(29, 233, 73), 1px -2px 2px rgb(14, 115, 224);
+    }
+
+    100% {
+        box-shadow: 0 0 9px rgb(69, 224, 193), 1px -2px 2px rgb(239, 16, 198);
+    }
+}
+
+.button {
+    color: white;
+    background-color: rgb(241, 137, 25);
+    font-size: 100%;
+    border-radius: 20%;
+
+}
+
+#se {
+    width: 55%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-top: 0px;
+
+
+}
+
+.button:hover {
+    background-color: rgba(57, 147, 5, 0.932);
+    transition: 2s;
+    color: rgb(235, 222, 222);
+
+}
+
+@media screen and (max-width:600px) {
+    #outerdiv { 
+
+        border-radius: 10px;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+        box-shadow: 0 0 5px yellow, 1px -2px 5px red;
+        background-color: rgba(0, 0, 0, 0.89);
+        display: flex;
+        color: rgb(241, 25, 25);
+        justify-content: center;
+        align-items: center;
+        transition: 2s;
+        animation-name: glow;
+        animation-duration: 10s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        flex-wrap: wrap;
+    }
+
+    #innerdiv {
+        margin-top: 10px;
+        gap: 4px;
+        display: flex;
+        color: white;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        text-shadow: 2px 3px 10px blue, 0 0 10px red;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #se {
+        width: 35%;
+        height: 90%;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin-left: 35%;
+        margin-top: 0px;
+
+
+    }
+
+    .button {
+        color: rgb(241, 234, 234);
+        background-color: rgb(241, 54, 25);
+        font-size: 100%;
+        border-radius: 20%;
+        margin-top: 10px;
+        margin-left: 10px;
+
+    }
+
+}
